@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #2a1f17;
+  line-height: 1.6;
+}
+
+/* Первый экран */
+.hero {
+  background: linear-gradient(rgba(42, 31, 23, 0.6), rgba(42, 31, 23, 0.6)),
+              url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1600') center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 150px 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 64px;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+}
+
+.hero p {
+  font-size: 22px;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.btn {
+  display: inline-block;
+  background: #c8956d;
+  color: #fff;
+  padding: 15px 40px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+  background: #a87550;
+  transform: translateY(-3px);
+}
+
+/* Адаптив */
+@media (max-width: 768px) {
+  .hero {
+    padding: 80px 15px;
+    min-height: 90vh;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .hero p {
+    font-size: 17px;
+  }
+
+  .btn {
+    padding: 13px 30px;
+    font-size: 16px;
+  }
+}
