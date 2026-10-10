@@ -175,6 +175,43 @@ body {
 .gallery-grid img:hover {
   transform: scale(1.03);
 }
+/* Контакты */
+.contacts {
+  background: #2a1f17;
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px 40px;
+}
+
+.contacts h2 {
+  font-size: 38px;
+  margin-bottom: 30px;
+}
+
+.contacts p {
+  font-size: 17px;
+  margin-bottom: 12px;
+  opacity: 0.85;
+}
+
+.contacts a {
+  color: #c8956d;
+  text-decoration: none;
+}
+
+.contacts a:hover {
+  text-decoration: underline;
+}
+
+.contacts .btn {
+  margin-top: 25px;
+}
+
+.copyright {
+  margin-top: 50px;
+  font-size: 14px !important;
+  opacity: 0.5 !important;
+}
 /* Адаптив */
 @media (max-width: 768px) {
   .hero {
@@ -239,5 +276,16 @@ body {
 
   .gallery-grid img {
     height: 220px;
+  }
+  .contacts {
+    padding: 60px 15px 30px;
+  }
+
+  .contacts h2 {
+    font-size: 28px;
+  }
+
+  .contacts p {
+    font-size: 16px;
   }
 }
